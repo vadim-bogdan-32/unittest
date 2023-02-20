@@ -7,18 +7,14 @@ class TestTriangleUnit(unittest.TestCase):
 
     def setUp(self):
         self.first = Triangle(9, 8, 7)
-        print("Triangle 7,8,9 created as 'first")
 
     def tearDown(self):
         del self.first
-        print("Triangle 7,8,9  'first deleted")
 
     def test_triangle_eq(self):
         print('test started')
         second = Triangle(7, 9, 8)
         self.assertEqual(self.first, second)
-        print('test finished')
-        # assert first == second
 
     def test_triangle_perimetr(self):
         self.assertEqual(self.first.perimetr(), 24)

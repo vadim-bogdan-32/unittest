@@ -45,7 +45,7 @@ class TestTriangleUnit(unittest.TestCase):
         self.assertLessEqual(self.first.perimetr(), third.perimetr())
 
     def test_triangle_ge(self):
-        second = Triangle(3, 3, 5)
+        second = Triangle(3, 5, 3)
         third = Triangle(7, 9, 8)
         self.assertGreaterEqual(self.first.perimetr(), second.perimetr())
         self.assertGreaterEqual(self.first.perimetr(), third.perimetr())
